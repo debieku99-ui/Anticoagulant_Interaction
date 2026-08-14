@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>抗凝血劑與抗血小板藥物交互作用臨床參考</title>
+<style>
+:root{--ink:#172033;--muted:#5b6678;--line:#d8e0ea;--bg:#f5f7fb;--paper:#fff;--navy:#16324f;--teal:#0f766e;
+--red:#b42318;--red-soft:#fdecea;--amber:#b45309;--amber-soft:#fff4df;--green:#166534;--green-soft:#eaf7ef;
+--shadow:0 12px 36px rgba(22,50,79,.08)}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:linear-gradient(135deg,var(--navy),#225579);color:#fff;padding:44px 6vw 32px}
+.eyebrow{margin:0 0 10px;color:#bfe8e3;font-size:14px;font-weight:700;letter-spacing:.04em}
+h1{max-width:1050px;margin:0;font-size:clamp(26px,3.6vw,42px);line-height:1.24}
+.subtitle{max-width:980px;margin:14px 0 0;color:#e8f1fb;font-size:17px}
+main{width:min(1220px,92vw);margin:24px auto 56px}
+section{margin-top:28px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);padding:clamp(18px,3vw,30px)}
+h2{margin:0 0 16px;font-size:24px;line-height:1.3;color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:10px}
+p.hint{color:var(--muted);font-size:13.5px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{border:1px solid var(--line);border-radius:8px;padding:16px;background:#fff}
+.card strong{display:block;font-size:16px;line-height:1.3;margin-bottom:10px}
+.card ul{margin:0;padding-left:20px} .card li{margin:7px 0;font-size:14px;line-height:1.5}
+.card.red{border-top:6px solid var(--red);background:var(--red-soft)}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 16px}
+button{border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);font:inherit;font-size:13.5px;padding:8px 14px;cursor:pointer}
+button[aria-pressed=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+table{width:100%;border-collapse:collapse}
+#interaction-table{min-width:1120px}
+th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:14.5px}
+th{background:#eef3f8;color:var(--navy);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:0} .source{color:var(--muted);font-size:13px}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700;margin:2px 4px 2px 0;border:1px solid transparent;white-space:nowrap}
+.pill.high{color:var(--red);background:var(--red-soft);border-color:#f5c4be}
+.pill.mid{color:var(--amber);background:var(--amber-soft);border-color:#f5d59d}
+.pill.low{color:var(--green);background:var(--green-soft);border-color:#bde8ca}
+.tierpill{display:inline-flex;border-radius:6px;padding:2px 9px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid var(--line)}
+.tierpill.tier-a{background:#e8f1fb;color:#1b4c7c} .tierpill.tier-b{background:#f1ecfa;color:#5b3aa8}
+.tierpill.tier-c{background:#f5f7fb;color:#5b6678} .tierpill.tier-d{background:#fdf3e7;color:#8a5a13}
+footer{width:min(1220px,92vw);margin:0 auto 40px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr} main{width:94vw}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">臨床端整合版｜依藥物與嚴重度分類 × 證據與臨床實用性分層</p>
+  <h1>抗凝血劑與抗血小板藥物交互作用臨床參考</h1>
+  <p class="subtitle">整合兩份資料：「抗凝血抗血小板交互作用_依藥物與嚴重度分類.xlsx」（各藥物嚴重度分布、四類藥物嚴重/高風險總覽）與先前整理的「抗凝血劑抗血小板藥物交互作用參考總表」（證據與臨床實用性分層、整合明細表），供調劑、醫囑審核與病人衛教時快速查閱。</p>
+</header>
+
+<main>
+  <section>
+    <h2>各藥物嚴重度分布（Summary）</h2>
+    <div class="table-wrap"><table><thead><tr><th>藥物分類</th><th>嚴重/高</th><th>中-高</th><th>中</th><th>低-中</th><th>未分類</th><th>合計</th></tr></thead><tbody><tr><td>Warfarin</td><td>14</td><td>6</td><td>13</td><td>3</td><td>0</td><td>37</td></tr><tr><td>DOAC</td><td>12</td><td>8</td><td>7</td><td>3</td><td>0</td><td>30</td></tr><tr><td>P2Y12i</td><td>7</td><td>6</td><td>6</td><td>2</td><td>0</td><td>21</td></tr><tr><td>Aspirin</td><td>6</td><td>6</td><td>7</td><td>3</td><td>0</td><td>22</td></tr></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>四類藥物「嚴重/高」風險項目總覽</h2>
+    <p class="hint">各品項後方標示證據分層。</p>
+    <div class="grid"><div class="card red"><strong>Warfarin（華法林）｜嚴重/高風險（14 項）</strong><ul><li>丹參 Salvia miltiorrhiza (Danshen) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>丹參 Salvia miltiorrhiza (Danshen) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>甘草 Glycyrrhiza uralensis (Licorice) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>抗凝血劑+抗血小板藥物併用(雙重/三重療法) <span class="tierpill tier-c">參考資料</span></li><li>納豆激酶 Nattokinase <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>納豆激酶 Nattokinase <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>強效CYP3A4/P-gp誘導劑(Rifampin、Carbamazepine、Phenytoin、聖約翰草St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>當歸 Angelica sinensis (Dong quai) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>聖約翰草/貫葉連翹 Hypericum perforatum (St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>銀杏 Ginkgo biloba <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>DOAC + 強效CYP3A4/P-gp誘導劑(Rifampin、Carbamazepine、Phenytoin、聖約翰草St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>Warfarin + Amiodarone <span class="tierpill tier-a">較明確/臨床資料</span></li><li>Warfarin + NSAIDs/Aspirin <span class="tierpill tier-a">較明確/臨床資料</span></li><li>Warfarin + Rifampin/Carbamazepine/Phenytoin/Primidone <span class="tierpill tier-a">較明確/臨床資料</span></li></ul></div><div class="card red"><strong>DOAC（新型口服抗凝血劑）｜嚴重/高風險（12 項）</strong><ul><li>丹參 Salvia miltiorrhiza (Danshen) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>抗凝血劑+抗血小板藥物併用(雙重/三重療法) <span class="tierpill tier-c">參考資料</span></li><li>納豆激酶 Nattokinase <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>強效CYP3A4/P-gp抑制劑(Ketoconazole/Itraconazole/Clarithromycin/Ritonavir/Amiodarone/Verapamil) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>強效CYP3A4/P-gp誘導劑(Rifampin、Carbamazepine、Phenytoin、聖約翰草St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>當歸 Angelica sinensis (Dong quai) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>聖約翰草/貫葉連翹 Hypericum perforatum (St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>聖約翰草/貫葉連翹 Hypericum perforatum (St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>銀杏 Ginkgo biloba <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>DOAC + 強效CYP3A4/P-gp誘導劑(Rifampin、Carbamazepine、Phenytoin、聖約翰草St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>DOAC(尤其Rivaroxaban/Apixaban) + 強效CYP3A4/P-gp抑制劑(Ketoconazole/Itraconazole/Clarithromycin/Ritonavir/Amiodarone/Verapamil) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>NSAIDs(含高劑量Aspirin作止痛用途) <span class="tierpill tier-a">較明確/臨床資料</span></li></ul></div><div class="card red"><strong>P2Y12 抑制劑｜嚴重/高風險（7 項）</strong><ul><li>丹參 Salvia miltiorrhiza (Danshen) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>甘草 Glycyrrhiza uralensis (Licorice) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>抗凝血劑+抗血小板藥物併用(雙重/三重療法) <span class="tierpill tier-c">參考資料</span></li><li>納豆激酶 Nattokinase <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>聖約翰草/貫葉連翹 Hypericum perforatum (St. John&#x27;s Wort) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>銀杏 Ginkgo biloba <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>PPI(尤其Omeprazole/Esomeprazole，強效CYP2C19抑制劑) <span class="tierpill tier-a">較明確/臨床資料</span></li></ul></div><div class="card red"><strong>Aspirin｜嚴重/高風險（6 項）</strong><ul><li>丹參 Salvia miltiorrhiza (Danshen) <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>抗凝血劑+抗血小板藥物併用(雙重/三重療法) <span class="tierpill tier-c">參考資料</span></li><li>納豆激酶 Nattokinase <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>銀杏 Ginkgo biloba <span class="tierpill tier-b">個案/彙整/資料庫</span></li><li>NSAIDs(含高劑量Aspirin作止痛用途) <span class="tierpill tier-a">較明確/臨床資料</span></li><li>Warfarin + NSAIDs/Aspirin <span class="tierpill tier-a">較明確/臨床資料</span></li></ul></div></div>
+  </section>
+
+  
+  <section>
+    <h2>證據與臨床實用性分層</h2>
+    <div class="table-wrap"><table><thead><tr><th>分層</th><th>代表項目</th><th>臨床實用判斷</th><th>建議處置</th><th>證據來源類型</th></tr></thead><tbody>
+      <tr><td><span class="pill high">A. 強證據/高風險</span></td><td>雙重/三重抗栓、Warfarin + Amiodarone/抗生素/NSAIDs、DOAC + 強效 CYP3A4/P-gp 抑制/誘導、Clopidogrel + Omeprazole/Esomeprazole</td><td>容易直接改變治療結果，需在處方審核當下介入。</td><td>避免或替代；必要併用時訂監測計畫與停用/降階時間。</td><td>FDA label/warning、StatPearls、臨床藥理回顧、meta-analysis、BJCP 研究。</td></tr>
+      <tr><td><span class="pill mid">B. 常見且可操作</span></td><td>Ibuprofen + Aspirin、Warfarin + 高劑量 Acetaminophen、維生素 K 攝取變動、SSRI/SNRI、P-gp 抑制劑 + 腎功能差</td><td>未必一律禁用，但臨床可以透過時序、替代、劑量或監測降低風險。</td><td>給具體替代：acetaminophen、pantoprazole/rabeprazole、H2 blocker、低 5-HT 影響抗憂鬱藥。</td><td>FDA advisory、交互作用資料庫、meta-analysis、抗凝安全性資料。</td></tr>
+      <tr><td><span class="pill mid">C. 中藥/保健品須主動問</span></td><td>丹參、當歸、甘草、銀杏、納豆激酶、大蒜/生薑濃縮製劑、高劑量維生素 E、葡萄糖胺/軟骨素</td><td>病人常不認為是藥物，若不主動詢問容易漏掉。</td><td>避免高風險併用；術前或出血高風險者停用並告知醫療團隊。</td><td>PLOS ONE 2013、個案報告、MSK/資料庫彙整、MedWatch。</td></tr>
+      <tr><td><span class="pill low">D. 證據有限/演進中</span></td><td>魚油標準劑量、薑黃食品用量、大麻/CBD、鳳梨酵素、木瓜酵素、丁香、貓爪藤、芹菜</td><td>避免過度警示一般飲食，但高劑量、濃縮、長期使用仍需記錄。</td><td>衛教出血徵象；高風險抗栓組合或手術前再提高警覺。</td><td>小型研究、回顧、藥理機轉推論、有限個案。</td></tr>
+    </tbody></table></div>
+  </section>
+
+
+  
+  <section>
+    <h2>整合明細表</h2>
+    <div class="controls" aria-label="篩選交互作用明細">
+      <button type="button" data-filter="all" aria-pressed="true">全部</button>
+      <button type="button" data-filter="high" aria-pressed="false">高風險/嚴重</button>
+      <button type="button" data-filter="warfarin" aria-pressed="false">Warfarin</button>
+      <button type="button" data-filter="doac" aria-pressed="false">DOAC</button>
+      <button type="button" data-filter="antiplatelet" aria-pressed="false">抗血小板</button>
+      <button type="button" data-filter="supplement" aria-pressed="false">中藥/保健品</button>
+      <button type="button" data-filter="limited" aria-pressed="false">證據有限</button>
+    </div>
+    <div class="table-wrap"><table id="interaction-table"><thead><tr><th>風險</th><th>品項/組合</th><th>對象</th><th>主要機轉與臨床效應</th><th>臨床建議</th><th>證據來源</th></tr></thead><tbody>
+      <tr data-tags="high warfarin doac antiplatelet"><td><span class="pill high">高</span></td><td>抗凝血劑 + 抗血小板藥物併用（雙重/三重療法）</td><td>Warfarin/DOAC + Aspirin/Clopidogrel/Ticagrelor</td><td>藥效加成，出血風險顯著增加；三重療法 major bleeding 可達高風險層級。</td><td>僅限明確適應症；評估 HAS-BLED/CHA2DS2-VASc 等風險，三重療法儘量 1 週內降階。</td><td class="source">抗凝血劑抗血小板總表</td></tr>
+      <tr data-tags="warfarin"><td><span class="pill mid">中-高</span></td><td>Warfarin + Macrolides/Fluoroquinolones/Metronidazole/TMP-SMX/Azole</td><td>Warfarin</td><td>腸道菌叢改變與 CYP2C9 抑制，INR 上升、出血風險增加。</td><td>起始/停用期間與停藥後 1-2 週加強 INR 監測。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high warfarin"><td><span class="pill high">高</span></td><td>Warfarin + Amiodarone</td><td>Warfarin</td><td>抑制 CYP2C9，INR 顯著上升。</td><td>起始 Amiodarone 時 Warfarin 劑量通常下修約 30-50%，密切追 INR。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high warfarin antiplatelet"><td><span class="pill high">高</span></td><td>Warfarin + NSAIDs/Aspirin</td><td>Warfarin</td><td>腸胃黏膜損傷與血小板抑制，GI 出血風險增加。</td><td>避免併用；止痛優先 acetaminophen，必要時 PPI 胃保護。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="warfarin"><td><span class="pill mid">中</span></td><td>Warfarin + 高劑量 Acetaminophen ≥2 g/day 且連續 3 天以上</td><td>Warfarin</td><td>干擾維生素 K 再利用循環，INR 上升。</td><td>長期高劑量使用者於用藥後 3-5 天追蹤 INR。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high warfarin"><td><span class="pill high">高</span></td><td>Warfarin + Rifampin/Carbamazepine/Phenytoin/Primidone</td><td>Warfarin</td><td>誘導 CYP2C9，INR 下降、血栓風險增加。</td><td>起始/停用誘導劑時調整 Warfarin 並密切監測，需數週追蹤。</td><td class="source">StatPearls 2024；PMC12324922</td></tr>
+      <tr data-tags="warfarin supplement"><td><span class="pill mid">中</span></td><td>維生素 K 攝取量變化、維生素 K 補充品、深綠色蔬菜濃縮錠</td><td>Warfarin</td><td>藥理拮抗，INR 不穩；攝取增加使藥效下降，驟減使藥效上升。</td><td>維持穩定攝取量，不需完全避免；避免額外高劑量補充。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high doac"><td><span class="pill high">高</span></td><td>DOAC + 強效 CYP3A4/P-gp 抑制劑</td><td>Rivaroxaban/Apixaban；部分 Dabigatran/Edoxaban</td><td>抑制代謝與外排，血中濃度上升，出血風險增加。</td><td>避免強效雙重抑制劑；腎功能不良者調整劑量或更換藥物。</td><td class="source">PMC9229376；BJCP 2025</td></tr>
+      <tr data-tags="doac"><td><span class="pill mid">中-高</span></td><td>DOAC + P-gp 抑制劑於腎功能不良病人</td><td>尤其 Dabigatran</td><td>P-gp 外排受抑且腎排除下降，出血風險上升。</td><td>腎功能不良者避免併用或調整劑量。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high doac supplement"><td><span class="pill high">高</span></td><td>DOAC + 強效 CYP3A4/P-gp 誘導劑（含聖約翰草）</td><td>所有 DOAC，尤其 Rivaroxaban</td><td>DOAC 濃度下降，治療失敗與血栓事件風險增加。</td><td>避免併用；無法避免時可考慮 Warfarin 並以 INR 監測。</td><td class="source">BJCP 2025；Scholz et al. BJCP 2021</td></tr>
+      <tr data-tags="antiplatelet"><td><span class="pill mid">中-高</span></td><td>Ibuprofen 等競爭性 COX-1 NSAID</td><td>Aspirin</td><td>競爭 COX-1 位點，降低 Aspirin 抗血小板與心臟保護效果。</td><td>Ibuprofen 於立即釋放 Aspirin 前至少 8 小時或後至少 30 分鐘；長期止痛改替代。</td><td class="source">FDA advisory；PMC5345232</td></tr>
+      <tr data-tags="high antiplatelet"><td><span class="pill high">高</span></td><td>Omeprazole/Esomeprazole</td><td>Clopidogrel</td><td>抑制 CYP2C19，降低活性代謝物與抗血小板效果。</td><td>避免併用；改 Pantoprazole/Rabeprazole、Famotidine 或制酸劑。</td><td class="source">FDA Plavix label 2022；VA 2024</td></tr>
+      <tr data-tags="antiplatelet"><td><span class="pill mid">中-高</span></td><td>其他 CYP2C19 抑制劑或 CYP2C19 poor metabolizer</td><td>Clopidogrel</td><td>活化能力下降，心血管栓塞事件風險增加。</td><td>高風險 ACS/PCI 病人考慮基因檢測或改 Ticagrelor/Prasugrel。</td><td class="source">FDA label；ACCF/AHA Clinical Alert</td></tr>
+      <tr data-tags="warfarin doac antiplatelet"><td><span class="pill mid">中-高</span></td><td>SSRI 類抗憂鬱劑</td><td>Warfarin/DOAC/抗血小板藥物</td><td>血小板 serotonin 影響，出血風險上升；部分 SSRI 也影響 CYP2C19。</td><td>評估出血風險；必要時改 Bupropion/Mirtazapine 等。</td><td class="source">PMC8725830；Frontiers in Medicine 2026</td></tr>
+      <tr data-tags="warfarin limited"><td><span class="pill low">中，證據有限</span></td><td>大麻/CBD</td><td>Warfarin；理論延伸至部分抗栓藥</td><td>Warfarin INR 可能上升；DOAC/抗血小板證據有限。</td><td>詢問使用情形，Warfarin 病人加強 INR 監測。</td><td class="source">StatPearls 2024</td></tr>
+      <tr data-tags="high warfarin supplement antiplatelet"><td><span class="pill high">嚴重</span></td><td>丹參、當歸、甘草</td><td>Warfarin/抗血小板藥物；部分理論延伸至 DOAC</td><td>抗凝血或抗血小板作用，增加出血風險；甘草另注意低血鉀、高血壓。</td><td>建議避免併用；Warfarin 若無法避免需密集 INR 監測。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="high supplement antiplatelet warfarin"><td><span class="pill high">嚴重-中重度</span></td><td>銀杏</td><td>Warfarin/抗血小板藥物/DOAC</td><td>PAF 與抗血小板相關作用，出血風險上升；可能影響 DOAC 濃度。</td><td>建議避免併用；手術前至少 36 小時停用。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet"><td><span class="pill mid">中-重度</span></td><td>高劑量/濃縮大蒜、生薑、大蒜精膠囊</td><td>Warfarin/抗血小板藥物/DOAC</td><td>抗血小板或 thromboxane 相關作用，增加出血風險。</td><td>避免大量或濃縮製劑；一般烹調用量風險較低。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet limited"><td><span class="pill mid">中，證據不一</span></td><td>薑黃/薑黃素</td><td>Warfarin/抗血小板藥物/DOAC</td><td>個案報告 INR 上升，但 Meriva 小型研究未見顯著交互作用。</td><td>高劑量或長期使用監測 INR/出血；食品調味量風險低。</td><td class="source">Medsafe NZ；PubMed 30070343</td></tr>
+      <tr data-tags="supplement warfarin"><td><span class="pill mid">中，證據衝突</span></td><td>人參</td><td>Warfarin 為主；抗栓藥需留意</td><td>證據方向不一致，可能增加出血或降低 Warfarin 藥效。</td><td>避免自行併用；若使用需追蹤 INR 與出血徵象。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet limited"><td><span class="pill mid">中</span></td><td>活血化瘀類、丁香、芹菜、貓爪藤</td><td>Warfarin/抗血小板藥物/DOAC</td><td>多為抗血小板或出血風險推論，直接臨床證據有限。</td><td>中西醫師溝通用藥；大量或長期使用追蹤出血徵象。</td><td class="source">PLOS ONE 2013；藥理推論</td></tr>
+      <tr data-tags="supplement warfarin"><td><span class="pill mid">中</span></td><td>苜蓿 / 高量綠茶</td><td>Warfarin</td><td>維生素 K 或藥理拮抗，降低 Warfarin 藥效、INR 下降。</td><td>提醒維持穩定攝取量，不需完全禁止。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="high supplement warfarin doac"><td><span class="pill high">嚴重</span></td><td>聖約翰草 / 貫葉連翹</td><td>Warfarin/所有 DOAC</td><td>誘導代謝與外排，降低 Warfarin 或 DOAC 效果，血栓風險上升。</td><td>強烈避免併用。</td><td class="source">PLOS ONE 2013；Scholz et al. 2021</td></tr>
+      <tr data-tags="supplement antiplatelet limited"><td><span class="pill low">中，證據有限</span></td><td>胡椒 / 大麻</td><td>Aspirin</td><td>可能降低 Aspirin 藥效，機轉未明。</td><td>提醒病人告知使用情形。</td><td class="source">PLOS ONE 2013</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet limited"><td><span class="pill low">中，證據演進中</span></td><td>魚油 / Omega-3</td><td>Warfarin/抗血小板藥物/DOAC</td><td>標準劑量臨床顯著出血風險不高；高劑量或雙重抗栓需留意。</td><td>1-2 g/day 風險較低；>3 g/day 或雙重抗栓監測出血。</td><td class="source">OmegaQuant；Drugs.com</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet"><td><span class="pill mid">中-重度</span></td><td>高劑量維生素 E ≥400 IU/day</td><td>Warfarin/抗血小板藥物/DOAC</td><td>抑制血小板聚集，可能干擾維生素 K 依賴凝血因子，增加出血。</td><td>避免高劑量單方補充；一般綜合維他命劑量風險較低。</td><td class="source">Natural Medicines/Lexicomp 共識</td></tr>
+      <tr data-tags="supplement warfarin"><td><span class="pill mid">中</span></td><td>輔酶 Q10</td><td>Warfarin</td><td>可能降低 Warfarin 藥效、INR 下降。</td><td>起始/停用 CoQ10 皆需追蹤 INR。</td><td class="source">交互作用資料庫共識</td></tr>
+      <tr data-tags="high supplement warfarin antiplatelet"><td><span class="pill high">嚴重</span></td><td>納豆激酶</td><td>Warfarin/抗血小板藥物/DOAC</td><td>纖溶作用，已有嚴重出血案例；亦有自行替代 Warfarin 導致血栓案例。</td><td>強烈避免併用，且不可自行替代處方抗凝血藥物。</td><td class="source">個案報告；MSK 彙整</td></tr>
+      <tr data-tags="supplement warfarin"><td><span class="pill mid">中</span></td><td>葡萄糖胺 / 軟骨素</td><td>Warfarin</td><td>INR 上升案例報告與 MedWatch 通報。</td><td>併用需監測 INR，尤其增加保健品劑量時。</td><td class="source">Knudsen et al. Pharmacotherapy 2008</td></tr>
+      <tr data-tags="supplement warfarin antiplatelet limited"><td><span class="pill low">低-中</span></td><td>鳳梨酵素 / 木瓜酵素</td><td>Warfarin/抗血小板藥物/DOAC</td><td>理論上增加出血風險，直接臨床證據有限。</td><td>大量或長期使用需留意出血徵象。</td><td class="source">藥理機轉推論</td></tr>
+    </tbody></table></div>
+  </section>
+
+</main>
+<footer>
+  <p>資料來源：抗凝血抗血小板交互作用_依藥物與嚴重度分類.xlsx；抗凝血劑抗血小板藥物交互作用參考總表.xlsx；DOAC與Aspirin_Clopidogrel交互作用參考總表.xlsx。此報告供臨床溝通與用藥審核輔助，最終處置仍須依適應症、腎功能、出血/血栓風險、手術時程與院內規範判斷。</p>
+</footer>
+
+<script>
+  const buttons=Array.from(document.querySelectorAll("[data-filter]"));
+  const rows=Array.from(document.querySelectorAll("#interaction-table tbody tr"));
+  buttons.forEach((button)=>button.addEventListener("click",()=>{const filter=button.dataset.filter;buttons.forEach((item)=>item.setAttribute("aria-pressed",String(item===button)));rows.forEach((row)=>{const tags=row.dataset.tags.split(" ");row.hidden=filter!=="all"&&!tags.includes(filter);});}));
+</script>
+</body>
+</html>
